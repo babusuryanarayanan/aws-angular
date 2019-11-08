@@ -1,0 +1,19 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-aws-academe-dev-80034-authRole",
+            "UnauthRoleArn": "arn:aws:iam::766377766697:role/amplify-aws-academe-dev-80034-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::766377766697:role/amplify-aws-academe-dev-80034-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-aws-academe-dev-80034-deployment",
+            "UnauthRoleName": "amplify-aws-academe-dev-80034-unauthRole",
+            "StackName": "amplify-aws-academe-dev-80034",
+            "StackId": "arn:aws:cloudformation:us-east-1:766377766697:stack/amplify-aws-academe-dev-80034/c17d5ce0-0227-11ea-bc99-0ad9172a6ca8"
+        },
+        "categories": {
+            "auth": {
+                "awsacademe59531616": {}
+            }
+        }
+    }
+}
