@@ -1,0 +1,40 @@
+{
+    "paths": [
+        {
+            "name": "/democourses",
+            "lambdaFunction": "democoursesFn",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH"
+                ]
+            }
+        }
+    ],
+    "resourceName": "democourses",
+    "apiName": "democourses",
+    "functionArns": [
+        {
+            "lambdaFunction": "democoursesFn"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 0,
+        "authRoleName": "amplify-aws-academe-dev-80034-authRole",
+        "unAuthRoleName": "amplify-aws-academe-dev-80034-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "democoursesFn",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

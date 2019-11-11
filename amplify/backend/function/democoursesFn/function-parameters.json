@@ -1,0 +1,11 @@
+{
+    "permissions": {
+        "auth": {
+            "awsacademe59531616": [
+                "create",
+                "read",
+                "update"
+            ]
+        }
+    }
+}

@@ -20,6 +20,20 @@
 					]
 				}
 			]
+		},
+		"democoursesFn": {
+			"service": "Lambda",
+			"providerPlugin": "awscloudformation",
+			"build": true,
+			"dependsOn": [
+				{
+					"category": "auth",
+					"resourceName": "awsacademe59531616",
+					"attributes": [
+						"UserPoolId"
+					]
+				}
+			]
 		}
 	},
 	"api": {
@@ -30,6 +44,20 @@
 				{
 					"category": "function",
 					"resourceName": "academecoursesFn",
+					"attributes": [
+						"Name",
+						"Arn"
+					]
+				}
+			]
+		},
+		"democourses": {
+			"service": "API Gateway",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "democoursesFn",
 					"attributes": [
 						"Name",
 						"Arn"
